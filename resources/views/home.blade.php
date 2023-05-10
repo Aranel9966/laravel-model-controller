@@ -1,4 +1,12 @@
 @extends('layouts/layout')
 @section('content')
-    <h2>prova</h2>
+    <ul>
+
+        @foreach ($movie as $item)
+        <li>
+            {{$item->title}}
+            
+        </li>
+        @endforeach
+    </ul>
 @endsection
