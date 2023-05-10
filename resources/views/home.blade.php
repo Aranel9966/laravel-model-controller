@@ -1,12 +1,12 @@
 @extends('layouts/layout')
 @section('content')
-    <ul>
+    <div class="container d-flex flex-row ">
 
         @foreach ($movie as $item)
-        <li>
+        <div class="card ">
             {{$item->title}}
             
-        </li>
+        </div>
         @endforeach
-    </ul>
+    </div>
 @endsection
